@@ -1,0 +1,8 @@
+# 关键点:用 ! 把前端构建产物放回部署包
+# FastAPI 后端通过 app.frontend("/", directory="frontend/dist") 挂载
+# 云端不会自动跑 npm run build,所以必须在本地先构建
+!frontend/dist/
+
+# 如果使用 SPA 路由(Vite 的 index.html 内已处理),无需额外兜底
+# 若改用 React Router/Vue Router 且遇到刷新 404,可取消下面注释
+# !frontend/dist/index.html

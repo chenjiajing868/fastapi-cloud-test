@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# 环境变量
+.env
+.env.local
+backend/.env
+
+# 前端构建产物(在 .fastapicloudignore 中放行)
+node_modules/
+frontend/dist/
+frontend/build/
+frontend/out/
+
+# 日志
+*.log
+logs/
+
+# IDE / 编辑器
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# 系统
+Thumbs.db
+desktop.ini
+
+# 临时文件
+*.tmp
+*.bak
