@@ -19,7 +19,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel, Field
 
-from chat_service import fallback_stream, stream_chat
+from .chat_service import fallback_stream, stream_chat
 
 logger = logging.getLogger("ai-customer-service")
 logging.basicConfig(level=logging.INFO)
